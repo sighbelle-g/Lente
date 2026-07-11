@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Lente Camera Rentals</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <span class="name">Lente</span>
+      <span class="loc">Camera Rental • Manila</span>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Cameras</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Get In Touch</h2>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <p><strong>Location:</strong><br>Quezon City, Manila, Philippines</p>
+        <p style="margin-top:14px"><strong>Phone:</strong><br>+63 917 000 0000</p>
+        <p style="margin-top:14px"><strong>Email:</strong><br>hello@manilalens.ph</p>
+        <p style="margin-top:14px"><strong>Hours:</strong><br>Mon–Sat, 9am–7pm</p>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="name-error"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="email-error"></span>
+
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what camera you need..."></textarea>
+        <span class="error" id="message-error"></span>
+
+        <button type="submit" class="btn" style="margin-top:18px">Send Message</button>
+        <div class="success-msg" id="form-success">Thanks! We'll get back to you shortly.</div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Lente Camera Rentals — <span class="loc">Manila, Philippines</span></p>
+  <p>&copy; <span class="year"></span> Lente. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
